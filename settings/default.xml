@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Options>
+    <HideCharactersName>no</HideCharactersName>
+    <TakeSSXLog>no</TakeSSXLog>
+    <CloseWithBot>no</CloseWithBot>
+    <AntiIdle>no</AntiIdle>
+    <EatFood>no</EatFood>
+    <Dancer>no</Dancer>
+    <FullLight>no</FullLight>
+    <FastHotkeys>no</FastHotkeys>
+  </Options>
+  <Alerts>
+    <GeneralSafelist />
+    <LogoutInsteadXLog>no</LogoutInsteadXLog>
+    <OnScreenMultiFloor>no</OnScreenMultiFloor>
+    <FloorDifference>Any</FloorDifference>
+    <OnScreenVisible>yes</OnScreenVisible>
+    <LogFile>no</LogFile>
+    <LogConsole>no</LogConsole>
+    <PlayerOnScreen PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" SafeList="" />
+    <MonsterOnScreen PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" SafeList="" />
+    <HealthBelow PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" Value="80" />
+    <Moved PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" />
+    <ManaBelow PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" Value="30" />
+    <GMDetected PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" Value="0" />
+    <Disconnected PlaySound="no" Flash="no" Xlog="no" PauseBot="no" />
+    <PrivateMessage PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" SafeList="" />
+    <PlayerAttack PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" SafeList="" />
+    <CAP PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" Value="30" />
+    <Stuck PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" Value="60" />
+    <PlayerKiller PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" SafeList="" />
+    <DefaultMessage PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" SafeList="" />
+    <ItemOnScreen PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" List="" />
+    <VipOnline PlaySound="no" Flash="no" Xlog="no" PauseBot="no" EnableCavebot="no" List="" />
+  </Alerts>
+  <Healer OpenBpMoreSupply="no" SmartCheck="no" Enabled="no">
+    <Rules />
+  </Healer>
+  <Hotkeys Enabled="no">
+    <List />
+  </Hotkeys>
+  <Cavebot NodeRange="3" MapClicksOnly="no" FireAvoidance="15" PoisonAvoidance="15" EnergyAvoidance="15">
+    <Waypoints />
+    <WalkableIds>1487;1488;1489;1490;1491;1492;1493;1494;1495;1496;1500;1501;1503;1504;1505;1506;1507;1508;1646;1647;1648;1649;1650;1651;1652;1653;1654;1655;1656;1657;1658;1659;1660;1661;1662;1663;1664;1665;1666;1667;1668;1669;1670;1671;1672;1673;1674;1675;1676;1677;1694;1695;1696;1697;1698;1699;1700;1701;1702;1703;1704;1705;1706;1707;1708;1709;1738;1739;1741;2100;2102;2595;2596</WalkableIds>
+    <SpecialAreas />
+    <SkipUnreachable Method="Skip" PlaySound="no" Log="no" />
+    <LuaSetup />
+  </Cavebot>
+  <Looter Condition="Loot targeteds only" EatFoodBodies="yes" OpenNextBps="no" DontOpenBags="no" Style="After Melee Kill" MaxDistBody="15" MoveSpeed="300" Enabled="no">
+    <Items />
+  </Looter>
+  <Targeting AttackNext="yes" OpenBpMoreSupply="no" AttackRange="0" RuneRange="0" Enabled="no">
+    <Monsters />
+    <TargetingPriority Danger="100" Proximity="80" Health="70" Stick="90" List="50" MustBeReachable="yes" MustBeShootable="no" />
+  </Targeting>
+  <Runemaker Enabled="no">
+    <Rune>Animate Dead</Rune>
+    <Hand>Left hand</Hand>
+    <Mana>300 to 300</Mana>
+    <Condition>Mana above</Condition>
+    <NoBlanks>Do nothing</NoBlanks>
+    <RefillSettings>
+      <Character X="0" Y="0" Z="0" />
+      <Rune X="0" Y="0" Z="0" Max="2" Enabled="no" />
+      <Food X="0" Y="0" Z="0" MaxPick="10" Enabled="no" />
+      <Blank X="0" Y="0" Z="0" Min="1" Enabled="no" />
+      <Danger X="0" Y="0" Z="0" XLog="no" WalkBack="no" WalkBack_Format="Minutes" WalkBack_Time="4 to 5" Player="no" PK="no" Monster="no" Attacked="no" Enabled="no" />
+    </RefillSettings>
+  </Runemaker>
+  <Tools>
+    <AutoFishing Condition="Min. Capacity" MaxValue="10" DetectWater="no" Enabled="no">
+      <FishSpots />
+    </AutoFishing>
+    <ManaTrainer Spell="Light" Mana="20 to 20" Condition="Mana above" Enabled="no" />
+    <AutoManaShield Enabled="no" />
+    <AutoHaste Spell="Utani Hur" Enabled="no" />
+    <AutoInvisible Enabled="no" />
+    <Reconnecter OpenMainBP="no" OpenBPs="no" WaitFormat="Minutes" WaitTime="4 to 5" Enabled="no" />
+    <SlimeTrainer MotherId="0" Alert="no" Enabled="no" />
+    <CreatureTrainer Name="Monk" Health="30 to 80" Enabled="no" />
+    <RingEquipper Consider="Health" Ring="Life Ring" Value="80 to 95" Enabled="no" />
+    <OutfitChanger Enabled="no">
+      <Enemies Outfit="162" Color="94" List="" />
+      <Friends Outfit="163" Color="87" List="" />
+      <Others Outfit="144" Color="0" List="" />
+    </OutfitChanger>
+    <PickupItems Backpack="Backpack" Position="My position" MoveDelay="100" OpenNextBp="no" Stack="no" Enabled="no" />
+    <PickupSpear Hand="Left hand" Direction="Targeting Position" Count="0" Enabled="no" />
+    <RefillAmmo Ammo="Bolt" Count="30" Enabled="no" />
+    <HealFriend Health="30" Spell="Heal Friend" List="" Party="no" Enabled="no" />
+    <TradeHelper Message="" Yell="no" SelectPreviousChannel="no" Wait="120 to 125" Enabled="no" />
+  </Tools>
+  <Persistents>
+    <List />
+  </Persistents>
+</Settings>
